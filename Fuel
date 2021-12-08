@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char gas;
+    int lit;
+
+    cout << "Enter the type of fuel you wish to purchase:\n";
+    cout << "P: Petrol\n";
+    cout << "D: Diesel\n";
+
+    cin >> gas;
+
+    switch (gas) {
+    case 'P':
+    case 'p':
+
+        cout << "\nEnter the amount you wish to purchase in litres:\n";
+
+        cin >> lit;
+
+        if (lit > 0) {
+            cout << "\nThank you for purchasing " << lit << " litres of Petrol!";
+        }
+        else {
+            cout << "\nInvalid amount of fuel.";
+        }
+    break;
+
+    case 'D':
+    case 'd':
+
+        cout << "\nEnter the amount you wish to purchase in litres:\n";
+
+        cin >> lit;
+
+        if (lit > 0) {
+            cout << "\nThank you for purchasing " << lit << " litres of Diesel!";
+        }
+        else {
+            cout << "\nInvalid amount of fuel.";
+        }
+    break;
+
+    default:
+        cout << "\nInvalid Input";
+    break;
+
+    }
+    system("pause>0");
+}
+
