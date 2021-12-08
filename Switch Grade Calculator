@@ -1,0 +1,62 @@
+#include <iostream>
+#include <exception>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string name;
+    int grade;
+
+    cout << "Enter the Student's Name:\n";
+    getline(cin, name);
+    cout << endl;
+
+    cout << "Enter the Student's Grade(0 - 100):\n";
+    cin >> grade;
+    cout << endl;
+
+    if (cin.fail()) {
+        cin.clear();
+        cin.ignore(numeric_limits < streamsize > :: max(), '\n');
+        cout << "Incorrect Input";
+    }
+    else if (grade > 100) {
+        cout << "Grade is out of parameters";
+    }
+    else {
+        switch (grade / 10) {
+        case 4:
+            cout << "Student - " << name << endl;
+            cout << "Grade - E" << endl;
+            break;
+        
+        case 5: 
+            cout << "Student - " << name << endl;
+            cout << "Grade - D" << endl;
+            break;
+        
+        case 6: 
+            cout << "Student - " << name << endl;
+            cout << "Grade - C" << endl;
+            break;
+        
+        case 7: 
+            cout << "Student - " << name << endl;
+            cout << "Grade - B" << endl;
+            break;
+        
+        case 8:
+        case 9: 
+        case 10: 
+            cout << "Student - " << name << endl;
+            cout << "Grade - A" << endl;
+            break;
+        
+        default: 
+            cout << "Student - " << name << endl;
+            cout << "Grade - F" << endl;
+        
+        }
+    }
+}
