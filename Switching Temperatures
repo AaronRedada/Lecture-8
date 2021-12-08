@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    double x;
+    double y;
+
+    char convt;
+
+    cout << "Which conversion would you like to select?:\n";
+    cout << "F: Farenheit to Celsius\n";
+    cout << "C: Celsius to Farenheit\n";
+    
+    cin >> convt;
+
+    
+    switch (convt) {
+    case 'F':
+    case 'f':
+        cout << "\nEnter the degrees you wish to convert:\n";
+
+        cin >> x;
+
+        y = (x - 32) * 0.556;
+
+        cout << "\nANSWER:\n";
+        cout << x << " degrees Farenheit converts to " << y << " degrees Celsius.\n";
+    break;
+    
+    case 'C':
+    case 'c':
+        cout << "\nEnter the degrees you wish to convert:\n";
+
+        cin >> x;
+
+        y = (x * 1.8) + 32;
+
+        cout << "\nANSWER:\n";
+        cout << x << " degrees Celsius converts to " << y << " degrees Farenheit.\n";
+    break;
+
+    default:
+        cout << "\nInvalid Input";
+    break;
+    }
+    system("pause>0");
+}
