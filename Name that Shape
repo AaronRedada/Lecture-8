@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x;
+    cout << "Enter the Number of sides of a shape (3 - 10) and I'll name it!: \n";
+    cin >> x;
+
+    switch (x) {
+    case 3:
+        cout << "\nIt's a Triangle.\n";
+        break;
+
+    case 4:
+        cout << "\nIt's a Square.\n";
+        break;
+
+    case 5:
+        cout << "\nIt's a Pentagon.\n";
+        break;
+
+    case 6:
+        cout << "\nIt's a Hexagon.\n";
+        break;
+
+    case 7:
+        cout << "\nIt's a Heptagon.\n";
+        break;
+
+    case 8:
+        cout << "\nIt's a Octagon.\n";
+        break;
+
+    case 9:
+        cout << "\nIt's a Nonagon.\n";
+        break;
+
+    case 10:
+        cout << "\nIt's a Decagon.\n";
+        break;
+
+    default:
+        cout << "Input Outside of Parameters.";
+
+    }
+}
