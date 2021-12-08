@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "What is the capital of France?\n";
+    cout << "a. Manila\n";
+    cout << "b. Paris\n";
+    cout << "c. Abu Dhabi\n";
+    cout << "d. Seoul\n";
+    char capital;
+    cin >> capital;
+
+    switch (capital){
+    case 'b':    
+        cout << "You entered the correct answer";
+        break;
+    default:
+        cout << "Sorry wrong answer";
+    }
+    system("pause>0");
+}
+
