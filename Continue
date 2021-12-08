@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    cout << "Would you like to continue? (Y/N):\n";
+    
+    char ans;
+    cin >> ans;
+
+    switch (ans) {
+
+    case 'Y':
+    case 'y':
+        cout << "\nLet us, CONTINUE....";
+        break;
+    
+    case'N':
+    case'n':
+        cout << "\n....Game Over...";
+        break;
+
+    default:
+        cout << "Invalid input";
+    }
+    system("pause>0");
+}
